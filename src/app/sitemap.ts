@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { getAllNews } from "@/lib/news";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://ugklracing.com";
 

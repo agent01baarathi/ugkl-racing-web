@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const links = [
   { href: "/racing-events", label: "Racing Events" },
@@ -38,12 +39,15 @@ export default function Navbar() {
             <span className="text-sm text-gray-600 cursor-not-allowed">
               Shop
             </span>
+            <ThemeToggle />
           </div>
 
-          {/* Mobile toggle */}
-          <button
+          {/* Mobile right side */}
+          <div className="lg:hidden flex items-center gap-2">
+            <ThemeToggle />
+            <button
             onClick={() => setOpen(!open)}
-            className="lg:hidden text-gray-300 hover:text-accent"
+            className="text-gray-300 hover:text-accent"
             aria-label="Toggle menu"
           >
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -54,6 +58,7 @@ export default function Navbar() {
               )}
             </svg>
           </button>
+          </div>
         </div>
       </div>
 

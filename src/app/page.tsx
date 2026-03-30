@@ -53,7 +53,7 @@ export default function Home() {
               className="p-6 rounded-xl bg-card-bg border border-card-border"
             >
               <h3 className="text-lg font-semibold text-accent">{f.title}</h3>
-              <p className="mt-3 text-gray-400 text-sm leading-relaxed">
+              <p className="mt-3 text-muted text-sm leading-relaxed">
                 {f.description}
               </p>
             </div>
@@ -62,7 +62,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-[#111] border-y border-card-border">
+      <section className="bg-surface border-y border-card-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">
             What Pilots Say
@@ -74,10 +74,10 @@ export default function Home() {
                 className="p-6 rounded-xl bg-card-bg border border-card-border"
               >
                 <h3 className="font-semibold text-accent">{t.title}</h3>
-                <p className="mt-3 text-gray-400 text-sm italic">
+                <p className="mt-3 text-muted text-sm italic">
                   &ldquo;{t.quote}&rdquo;
                 </p>
-                <p className="mt-4 text-sm font-medium text-gray-300">
+                <p className="mt-4 text-sm font-medium text-body">
                   — {t.author}
                 </p>
               </div>
@@ -91,13 +91,13 @@ export default function Home() {
         <h2 className="text-2xl sm:text-3xl font-bold">
           Built by the community for the community
         </h2>
-        <p className="mt-4 text-gray-400 max-w-xl mx-auto">
+        <p className="mt-4 text-muted max-w-xl mx-auto">
           Create your MultiGP account and start racing with us.
         </p>
         <div className="mt-8">
           <Link
             href="/contact"
-            className="inline-flex items-center px-6 py-3 bg-accent text-[#0a0a0a] font-semibold rounded-lg hover:bg-accent-dim transition-colors"
+            className="inline-flex items-center px-6 py-3 bg-accent text-contrast-on-accent font-semibold rounded-lg hover:bg-accent-dim transition-colors"
           >
             Get Started
           </Link>
